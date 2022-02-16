@@ -1,59 +1,31 @@
-<script context="module">
-	export const prerender = true;
-</script>
-
-<script>
-	import Counter from '$lib/Counter.svelte';
-</script>
-
 <svelte:head>
 	<title>Home</title>
 </svelte:head>
 
-<section>
-	<h1>
-		<div class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</div>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
-
-	<Counter />
+<section class="center">
+	<h5>Craft Together</h5>
+	<h1>Survival Minecraft server</h1>
 </section>
 
 <style>
-	section {
+	.center {
+		width: 100%;
+		height: calc(100vh - 50px);
+
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: center;
-		flex: 1;
+		justify-content: center;
 	}
 
+	h5 {
+		font-weight: 500;
+		font-size: 5rem;
+		color: var(--colour-4);
+	}
 	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
+		font-weight: normal;
+		font-size: 1.25rem;
+		color: var(--colour-3);
 	}
 </style>
