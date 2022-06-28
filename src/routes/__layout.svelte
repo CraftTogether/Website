@@ -1,10 +1,10 @@
 <script>
-	import NavBar from "$lib/NavBar.svelte";
+	import NavBar from '$lib/NavBar.svelte';
 </script>
 
 <section >
-	<NavBar/>
 	<main>
+		<NavBar/>
 		<slot/>
 	</main>
 </section>

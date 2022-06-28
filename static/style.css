@@ -7,9 +7,24 @@
 }
 
 :root {
-    --colour-4: #2c3531;
-    --colour-3: #116466;
-    --colour-2: #D9B08C;
-    --colour-1: #FFCB9A;
+    --colour-4: #2C3531;
+    --colour-2: #659DBD;
+    --colour-1: #7DBDE0;
     --colour-0: #D1E8E2;
+}
+
+h5, .h5 {
+    font-weight: normal;
+    font-size: 1.25rem;
+    color: var(--colour-4);
+}
+h2, .h2 {
+    font-weight: 550;
+    font-size: 1.25rem;
+    color: var(--colour-4);
+}
+h1, .h1 {
+    font-weight: 500;
+    font-size: 5rem;
+    color: var(--colour-4);
 }

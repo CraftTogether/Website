@@ -1,31 +1,20 @@
-<section class="navigation-bar">
-	<img src="/logo.png">
-	<div class="links">
-		<p>Test</p>
-		<p>Home</p>
-	</div>
-</section>
+<nav>
+	<a class="h2" href="/">Home</a>
+	<a class="h2" href="/downloads">Downloads</a>
+	<a class="h2">Plugins</a>
+</nav>
 
 <style>
-	.navigation-bar {
-		width: 100%;
-		height: 50px;
+	nav {
+		width: 100vw;
+		height: 75px;
+
+		padding: 25px;
+		position: absolute;
 
 		display: flex;
-		justify-content: space-between;
+		gap: 25px;
 	}
 
-	.navigation-bar > img {
-		height: 100%;
-	}
-	.links {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.links > p {
-		font-size: 1.5rem;
-		margin-right: 25px;
-	}
+	a { text-decoration: none }
 </style>

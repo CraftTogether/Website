@@ -2,15 +2,17 @@
 	<title>Home</title>
 </svelte:head>
 
-<section class="center">
-	<h5>Craft Together</h5>
-	<h1>Survival Minecraft server</h1>
+<section>
+	<div>
+		<h1>Craft Together</h1>
+		<h5>Survival Minecraft server</h5>
+	</div>
 </section>
 
 <style>
-	.center {
-		width: 100%;
-		height: calc(100vh - 50px);
+	section {
+		width: 100vw;
+		height: 100vh;
 
 		display: flex;
 		flex-direction: column;
@@ -18,14 +20,22 @@
 		justify-content: center;
 	}
 
-	h5 {
-		font-weight: 500;
-		font-size: 5rem;
-		color: var(--colour-4);
+	div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		aspect-ratio: 16/9;
+		width: 85%;
+		max-width: 1750px;
+
+		background-image: url("https://www.minecraft.net/content/dam/minecraft/home/home-hero-1200x600.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-radius: 25px;
+		box-shadow: 0 0 25px var(--colour-3);
 	}
-	h1 {
-		font-weight: normal;
-		font-size: 1.25rem;
-		color: var(--colour-3);
-	}
+
+	h1, h5 { color: var(--colour-0) }
 </style>
