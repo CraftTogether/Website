@@ -1,7 +1,7 @@
 <nav>
 	<a class="h2" href="/">Home</a>
 	<a class="h2" href="/downloads">Downloads</a>
-	<a class="h2">Plugins</a>
+	<a href="https://github.com/CraftTogether" class="h2">Plugins</a>
 </nav>
 
 <style>
@@ -10,7 +10,6 @@
 		height: 75px;
 
 		padding: 25px;
-		position: absolute;
 
 		display: flex;
 		gap: 25px;
